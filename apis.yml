@@ -1,7 +1,25 @@
 aid: chickin
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chickin.png
 name: Chickin
-description: Chickin is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Chickin is an Indonesian poultry-technology company operating a full-stack, integrated ecosystem
+  for chicken farmers across Indonesia. It combines closed-house smart-farming hardware (IoT climate and
+  environmental controllers), day-old-chick and feed supply, farmer financing, and guaranteed offtake and
+  distribution of live birds, aiming to modernize and de-risk small and mid-scale poultry farming. Backed by
+  500 Global, Chickin runs its operations through a mobile and web application at chickin.id. As of this
+  enrichment pass the company publishes no public developer program, API documentation, or machine-readable
+  API artifacts; this profile records its public web presence and domain-security posture and remains a
+  lead for further enrichment should a developer surface be published.
 url: https://raw.githubusercontent.com/api-evangelist/chickin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Poultry
+- Agriculture
+- AgTech
+- IoT
+- Smart Farming
+- Supply Chain
+- Livestock
+- Indonesia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/chickin-domain-security.yml
 - type: Website
   url: https://chickin.id
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
